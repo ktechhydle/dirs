@@ -1,5 +1,5 @@
-fetch "src/temp_dir.glang";
-fetch "src/user_dir.glang";
+fetch _env("GLANG_PKG") + "kennels/dirs/src/temp_dir.glang";
+fetch _env("GLANG_PKG") + "kennels/dirs/user_dir.glang";
 
 stay user_desktop_dir = _usr_dir("Desktop");
 stay user_documents_dir = _usr_dir("Documents");

@@ -1,0 +1,6 @@
+name = "dirs"
+description = "Retrieve user directories in GLang"
+authors = ["Keller Hydle"]
+version = "1.0"
+entry = "lib.glang"
+requires = []

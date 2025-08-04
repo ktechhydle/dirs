@@ -1,0 +1,15 @@
+fetch std_os;
+
+# get the user downloads dir
+# returns the full user downloads dir ('C:/Users/JohnDoe/Downloads' or '/Users/JohnDoe/Downloads')
+func user_downloads_dir() {
+    obj dir = "";
+
+    if os_type() == "windows" {
+        obj dir = os_user_dir() + "\\Downloads";
+    } otherwise {
+        obj dir = os_user_dir() + "/Downloads";
+    }
+
+    give dir;
+}

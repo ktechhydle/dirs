@@ -8,7 +8,7 @@ glang install dirs
 ```
 fetch dirs;
 
-bark(user_downloads_dir());
+bark(user_downloads_dir);
 ```
 
 ## Supported Directories

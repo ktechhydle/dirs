@@ -1,0 +1,18 @@
+fetch std_os;
+
+# get the system temp directory
+# returns the full system temp dir (e.g. 'C:/Users/JohnDoe/AppData/Local/Temp' on Windows, or '/tmp' on Unix)
+func _usr_tmp_dir() {
+    obj dir = "";
+
+    if os_type() == "windows" {
+        # windows temp is usually in %TEMP% or %LOCALAPPDATA%\Temp
+        obj local = os_env("LOCALAPPDATA");
+        obj dir = local + "\\Temp";
+    } otherwise {
+        # unix like systems are /tmp
+        obj dir = "/tmp";
+    }
+
+    give dir;
+}

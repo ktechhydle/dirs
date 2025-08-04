@@ -1,1 +1,10 @@
-fetch "src/dirs.glang";
+fetch "src/temp_dir.glang";
+fetch "src/user_dir.glang";
+
+stay user_desktop_dir = _usr_dir("Desktop");
+stay user_documents_dir = _usr_dir("Documents");
+stay user_downloads_dir = _usr_dir("Downloads");
+stay user_pictures_dir = _usr_dir("Pictures");
+stay user_videos_dir = _usr_dir("Videos");
+stay user_audio_dir = _usr_dir("Music");
+stay user_temp_dir = _usr_tmp_dir();

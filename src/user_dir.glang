@@ -1,0 +1,15 @@
+fetch std_os;
+
+# get a specific user subdirectory by name (e.g. "Downloads", "Music", etc.)
+# returns the full path to that subdir ('C:/Users/JohnDoe/<name>' or '/Users/JohnDoe/<name>')
+func _usr_dir(name) {
+    obj dir = "";
+
+    if os_type() == "windows" {
+        obj dir = os_user_dir() + "\\" + name;
+    } otherwise {
+        obj dir = os_user_dir() + "/" + name;
+    }
+
+    give dir;
+}

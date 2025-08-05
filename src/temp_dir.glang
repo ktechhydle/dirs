@@ -1,5 +1,3 @@
-fetch std_os;
-
 # get the system temp directory
 # returns the full system temp dir (e.g. 'C:/Users/JohnDoe/AppData/Local/Temp' on Windows, or '/tmp' on Unix)
 func _usr_tmp_dir() {

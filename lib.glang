@@ -1,6 +1,6 @@
 fetch std_os;
-fetch _env("GLANG_PKG") + "/dirs/src/temp_dir.glang";
-fetch _env("GLANG_PKG") + "/dirs/src/user_dir.glang";
+fetch os_env("GLANG_PKG") + "/dirs/src/temp_dir.glang";
+fetch os_env("GLANG_PKG") + "/dirs/src/user_dir.glang";
 
 stay user_desktop_dir = _usr_dir("Desktop");
 stay user_documents_dir = _usr_dir("Documents");
